@@ -81,19 +81,10 @@ docker ps
 
 - **Main URL / Base URL**: `http://10.38.117.120:8080/`  
 
-### Example Endpoints:
-
+### Example Endpoint:
 - **Get all students** → `GET http://10.38.117.120:8080/students`  
-- **Get student by ID** → `GET http://10.38.117.120:8080/student/{id}`  
-- **Create student** → `POST http://10.38.117.120:8080/student`  
-- **Update student** → `PUT http://10.38.117.120:8080/student`  
-- **Delete student** → `DELETE http://10.38.117.120:8080/student/{id}`  
 
-- **Get all courses** → `GET http://10.38.117.120:8080/courses`  
-- **Get course by ID** → `GET http://10.38.117.120:8080/course/{id}`  
-- **Create course** → `POST http://10.38.117.120:8080/course`  
-- **Update course** → `PUT http://10.38.117.120:8080/course`  
-- **Delete course** → `DELETE http://10.38.117.120:8080/course/{id}`  
+
 
 
 
