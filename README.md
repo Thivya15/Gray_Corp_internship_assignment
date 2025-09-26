@@ -55,6 +55,26 @@ docker-compose up -d
 docker ps
 ```
 
+## 📘 API Endpoints
+### 🎯 Course APIs
+| Method | Endpoint       | Description           |
+| ------ | -------------- | --------------------- |
+| POST   | `/course`      | Create a new course   |
+| GET    | `/course/{id}` | Get course by ID      |
+| GET    | `/courses`     | Get all courses       |
+| PUT    | `/course`      | Update a course       |
+| DELETE | `/course/{id}` | Delete a course by ID |
+
+### 🎯 Student APIs
+| Method | Endpoint        | Description            |
+| ------ | --------------- | ---------------------- |
+| POST   | `/student`      | Create a new student   |
+| GET    | `/student/{id}` | Get student by ID      |
+| GET    | `/students`     | Get all students       |
+| PUT    | `/student`      | Update a student       |
+| DELETE | `/student/{id}` | Delete a student by ID |
+
+
 
 
 
