@@ -74,6 +74,9 @@ docker ps
 | PUT    | `/student`      | Update a student       |
 | DELETE | `/student/{id}` | Delete a student by ID |
 
+## 📑 API Documentation 
+**Postman Collection** → 
+
 
 
 
