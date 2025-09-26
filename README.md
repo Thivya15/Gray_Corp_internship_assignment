@@ -1,11 +1,11 @@
-# 🎓 Student Management System (Spring Boot + MongoDB)
+# Student Management System (Spring Boot + MongoDB)
 
 A simple **Student Management REST API** built using **Spring Boot** with **MongoDB** for data storage.  
 This project is designed as a backend developer internship/associate task and demonstrates REST API development, service-layer architecture, exception handling, and Docker containerization.
 
 ---
 
-## 🚀 Features
+## Features
 - Manage Students (Create, Read, Update, Delete)
 - Manage Courses (Create, Read, Update, Delete)
 - RESTful API best practices
@@ -16,7 +16,7 @@ This project is designed as a backend developer internship/associate task and de
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Java 17**
 - **Spring Boot 3.5.6**
 - **MongoDB**
@@ -25,13 +25,13 @@ This project is designed as a backend developer internship/associate task and de
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Clone Repository
+### Clone Repository
 ```bash
 git clone https://github.com/Thivya15/student-management-system.git
 cd student-management-system
@@ -48,8 +48,8 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## 📘 API Endpoints
-### 🎯 Course APIs
+## API Endpoints
+### Course APIs
 | Method | Endpoint       | Description           |
 | ------ | -------------- | --------------------- |
 | POST   | `/course`      | Create a new course   |
@@ -58,7 +58,7 @@ mvn spring-boot:run
 | PUT    | `/course`      | Update a course       |
 | DELETE | `/course/{id}` | Delete a course by ID |
 
-### 🎯 Student APIs
+### Student APIs
 | Method | Endpoint        | Description            |
 | ------ | --------------- | ---------------------- |
 | POST   | `/student`      | Create a new student   |
@@ -67,22 +67,23 @@ mvn spring-boot:run
 | PUT    | `/student`      | Update a student       |
 | DELETE | `/student/{id}` | Delete a student by ID |
 
-## 📑 API Documentation 
+## API Documentation 
 **Postman Collection** → [postman_collection.json](https://github.com/user-attachments/files/22565860/Student_Course_Management_System.postman_collection.json)
 
-## 🐳 Docker Setup & Access
+## Docker Setup & Access
 ### Run with Docker
 ```bash
 docker build -t student-management-app .
 docker-compose up -d
 docker ps
 ```
-## 🌐 Base URL
+## Docker Base URL
 
-- **Main URL / Base URL**: `http://10.38.117.120:8080/`  
+- **Base URL**: `http://10.38.117.120:8080/`  
 
 ### Example Endpoint:
 - **Get all students** → `GET http://10.38.117.120:8080/students`  
+
 
 
 
