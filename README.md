@@ -37,17 +37,24 @@ git clone https://github.com/Thivya15/student-management-system.git
 cd student-management-system
 ```
 ### application.properties
+```bash
 spring.data.mongodb.uri=mongodb://127.0.0.1:27017/student_db
 server.port=8080
+```
 
 ### Build and Run The Application
+```bash
 mvn clean install
 mvn spring-boot:run
+```
 
 ### Run with Docker
+```bash
 docker build -t student-management-app .
 docker-compose up -d
 docker ps
+```
+
 
 
 
