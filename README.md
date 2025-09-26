@@ -44,10 +44,11 @@ server.port=8080
 mvn clean install
 mvn spring-boot:run
 
-###Run with Docker
+### Run with Docker
 docker build -t student-management-app .
 docker-compose up -d
 docker ps
+
 
 
 
