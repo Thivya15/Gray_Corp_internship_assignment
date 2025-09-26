@@ -33,11 +33,23 @@ This project is designed as a backend developer internship/associate task and de
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/<your-username>/student-management-system.git
+git clone https://github.com/Thivya15/student-management-system.git
 cd student-management-system
 ```
-
+### application.properties
 spring.data.mongodb.uri=mongodb://127.0.0.1:27017/student_db
 server.port=8080
+
+### Build and Run The Application
+mvn clean install
+mvn spring-boot:run
+
+###Run with Docker
+docker build -t student-management-app .
+docker-compose up -d
+docker ps
+
+
+
 
 
