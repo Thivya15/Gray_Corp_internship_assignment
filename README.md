@@ -75,7 +75,8 @@ docker ps
 | DELETE | `/student/{id}` | Delete a student by ID |
 
 ## 📑 API Documentation 
-**Postman Collection** → 
+**Postman Collection** → [postman_collection.json](https://github.com/user-attachments/files/22565860/Student_Course_Management_System.postman_collection.json)
+
 
 
 
