@@ -48,13 +48,6 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-### Run with Docker
-```bash
-docker build -t student-management-app .
-docker-compose up -d
-docker ps
-```
-
 ## 📘 API Endpoints
 ### 🎯 Course APIs
 | Method | Endpoint       | Description           |
@@ -76,6 +69,33 @@ docker ps
 
 ## 📑 API Documentation 
 **Postman Collection** → [postman_collection.json](https://github.com/user-attachments/files/22565860/Student_Course_Management_System.postman_collection.json)
+
+## 🐳 Docker Setup & Access
+### Run with Docker
+```bash
+docker build -t student-management-app .
+docker-compose up -d
+docker ps
+```
+## 🌐 Base URL
+
+- **Main URL / Base URL**: `http://10.38.117.120:8080/`  
+
+### Example Endpoints:
+
+- **Get all students** → `GET http://10.38.117.120:8080/students`  
+- **Get student by ID** → `GET http://10.38.117.120:8080/student/{id}`  
+- **Create student** → `POST http://10.38.117.120:8080/student`  
+- **Update student** → `PUT http://10.38.117.120:8080/student`  
+- **Delete student** → `DELETE http://10.38.117.120:8080/student/{id}`  
+
+- **Get all courses** → `GET http://10.38.117.120:8080/courses`  
+- **Get course by ID** → `GET http://10.38.117.120:8080/course/{id}`  
+- **Create course** → `POST http://10.38.117.120:8080/course`  
+- **Update course** → `PUT http://10.38.117.120:8080/course`  
+- **Delete course** → `DELETE http://10.38.117.120:8080/course/{id}`  
+
+
 
 
 
