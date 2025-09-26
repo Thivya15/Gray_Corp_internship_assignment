@@ -4,6 +4,8 @@ import com.student_management_system.entity.Student;
 import com.student_management_system.exception.ResourceNotFoundException;
 import com.student_management_system.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -46,6 +48,11 @@ public class StudentServiceImpl implements StudentService {
         Student existing = studentRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Student not found with id: " + id));
         studentRepository.delete(existing);
+    }
+
+    @Override
+    public Page<Student> getStudentsPaginated(Pageable pageable) {
+        return studentRepository.findAll(pageable);
     }
 }
 

@@ -4,6 +4,8 @@ import com.student_management_system.entity.Course;
 import com.student_management_system.exception.ResourceNotFoundException;
 import com.student_management_system.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,6 +47,11 @@ public class CourseServiceImpl implements CourseService{
         Course existing = courseRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Course not found with id: " + id));
         courseRepository.delete(existing);
+    }
+
+    @Override
+    public Page<Course> getCoursesPaginated(Pageable pageable) {
+        return courseRepository.findAll(pageable);
     }
 
 }

@@ -3,6 +3,9 @@ package com.student_management_system.controller;
 import com.student_management_system.entity.Student;
 import com.student_management_system.service.StudentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,5 +40,14 @@ public class StudentController {
     public String deleteStudent(@PathVariable String id) {
         studentService.deleteStudentById(id);
         return "Student deleted successfully with id: " + id;
+    }
+
+    @GetMapping("/students/paginated")
+    public Page<Student> getStudentsPaginated(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "5") int size) {
+
+        Pageable pageable = PageRequest.of(page, size);
+        return studentService.getStudentsPaginated(pageable);
     }
 }
